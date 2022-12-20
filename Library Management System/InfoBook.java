@@ -1,0 +1,31 @@
+
+// It takes Input for the books and related information
+import java.util.Scanner;
+
+public class InfoBook {
+
+    public int sNo;
+    public String bookName;
+    public String authorName;
+    public int bookQty;
+    public int bookQtyCopy;
+
+    Scanner input = new Scanner(System.in);
+
+    public InfoBook() {
+
+        System.out.println("Enter Serial No of Book:");
+        this.sNo = input.nextInt();
+        input.nextLine();
+
+        System.out.println("Enter Book Name:");
+        this.bookName = input.nextLine();
+
+        System.out.println("Enter Author Name:");
+        this.authorName = input.nextLine();
+
+        System.out.println("Enter Quantity of Books:");
+        this.bookQty = input.nextInt();
+        bookQtyCopy = this.bookQty;
+    }
+}
